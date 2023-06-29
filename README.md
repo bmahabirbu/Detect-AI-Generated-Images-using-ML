@@ -47,10 +47,15 @@ Here is an example of oversampling
 
 ![70393b39-59a2-47fa-bda3-34e0bc021afc](https://github.com/bmahabirbu/CS523/assets/56164556/9f0a53ba-af13-4078-9f66-6b09cc676fa8)
 
-All in all sampling the data in this way made my accuracy much worse. This shows that the data is quite unique and cant be reproduced using normal means.
+All in all, sampling the data in this way made my accuracy much worse. This shows that the data is quite unique and cant be reproduced using normal means.
 
-Along those lines I came across a paper that stated histograms-of-oriented-gradients feature extraction would still be able to extract features even on encrypted images using block-based encryption. I had no idea what encryption the company used to encrypt the images but it was worth a shot.
+Along those lines, I came across a paper that stated histograms-of-oriented-gradients feature extraction would still be able to extract features even on encrypted images using block-based encryption. I had no idea what encryption the company used to encrypt the images but it was worth a shot.
 https://arxiv.org/pdf/1904.12434.pdf
 
-Even though my overall accuracy went down it was interesting to note that SVM which the paper used increased the accuracy by 5%
+Even though my overall accuracy went down it was interesting to note that SVM, which the paper used, increased the accuracy by 5%
+
+Finally, I used the package imgaug to augment the data using self-supervised techniques such as flipping and rotating an image but sadly this didnt work as well.
+
+## Summary
+Overall the competition was an exercise in combining classic ML models into a model that would perform well. However, I wish that the company didn't encrypt the images so that we could use deep-learning techniques instead 
 
